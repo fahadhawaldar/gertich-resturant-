@@ -1,0 +1,14 @@
+.header {
+  background-color: var(--color-black);
+  display: flex;
+}
+.heading {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  line-height: 117px;
+  font-weight: 700;
+  font-size: 90px;
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}

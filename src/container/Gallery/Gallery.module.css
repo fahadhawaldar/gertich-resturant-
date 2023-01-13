@@ -1,0 +1,135 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+
+  background-color: var(--color-black);
+  padding: 4rem 0 4rem 6rem;
+}
+
+.gallerycontent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 500px;
+  padding-right: 2rem;
+}
+
+.gallerycontent button {
+  margin-top: 1rem;
+}
+
+.galleryimages {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  position: relative;
+}
+
+.images_container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.images_container::-webkit-scrollbar {
+  display: none;
+}
+
+.imagescard {
+  position: relative;
+  min-width: 301px;
+  height: 447px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.imgicon {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.imagescard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.imagescard:hover img {
+  opacity: 0.35;
+}
+
+.imagescard:hover .imgicon {
+  opacity: 1;
+}
+
+.arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 10%;
+}
+
+.arrowicon {
+  color: var(--color-golden);
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--color-black);
+}
+.arrowicon:hover {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+    .gallerycontent{
+        min-width: 1000px;
+        padding-right: 4rem;
+    }
+
+    .imagescard{
+        min-width: 400px;
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .gallery{
+        flex-direction: column;
+
+    }
+    .galleryimages{
+        max-width: 100%;
+        margin: 5rem 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .gallery{
+        padding: 4rem 0 4rem 4rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .gallery{
+        padding: 4rem 0 4rem 2rem;
+    }
+
+    .gallerycontent{
+        min-width:100% ;
+    }
+
+    .imagescard{
+        min-width: 240px;
+        height: 320px;
+    }
+}

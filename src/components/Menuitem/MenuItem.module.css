@@ -1,0 +1,35 @@
+.menuitem{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.meanuitemhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuitemsub{
+    width: 100%;
+    margin-top: 0.2rem ;
+}
+.menuitemname{
+    flex: 1;
+}
+.menuitemdash{
+    width: 90px;
+height: 1px;
+
+background: var(--color-golden);
+margin: 0 1rem;
+}
+
+.menuitemprice{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+

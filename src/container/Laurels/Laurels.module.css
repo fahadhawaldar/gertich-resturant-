@@ -1,0 +1,41 @@
+.laurelsawards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.awardscard{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 230px;
+
+    margin: 1rem;
+}
+
+.awardscard img{
+    width: 50px;
+    height: 50px;
+}
+
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width:1900px){
+    .awardscard{
+        min-width: 390px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .awardscard{
+        min-width: 100%;
+        margin: 1rem 0;
+    }
+}
